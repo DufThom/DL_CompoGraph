@@ -23,11 +23,6 @@ namespace Valid_Saisie
             
         }
 
-        //private static new void FormClosed()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         private void textBox1_TextChanged(object sender, EventArgs e) // Nom
         {
             Regex TxtNom = new Regex(@"^[a-zA-Z]{1,30}$");//Contrôle pour n'accepter que des caractères, 30 max.
@@ -42,11 +37,30 @@ namespace Valid_Saisie
                 Console.Beep(300, 800);
             }
         }
+        private void textBox1_Validating(object sender, CancelEventArgs e)//contrôle en sortie de textbox (tabul
+        {
+            Regex TxtNom = new Regex(@"^[a-zA-Z]{1,30}$");
+
+            if (TxtNom.IsMatch(textBox1.Text))
+            {
+                textBox1.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                textBox1.BackColor = Color.Red;
+                Console.Beep(300, 800);
+                e.Cancel = true;
+                MessageBox.Show("Erreur de Saisie");
+            }
+        }
 
         private void textBox2_TextChanged(object sender, EventArgs e) // Date
         {
+
+
             Regex TxtDate = new Regex(@"^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$");//contrôle Date
-            if (TxtDate.IsMatch(textBox2.Text)) //Affichera la TextBox en vert si Ok, sinon en rouge
+            //Regex TxtDate = new Regex(@"^[0-3][0-9]/[0-1][0-9]/[0-2][0-9][0-9][0-9]$");// autre contrôle Date, plus simple
+            if ((TxtDate.IsMatch(textBox2.Text)) && (Convert.ToDateTime(textBox2.Text) > DateTime.Now)) // && contrôle que date > à Date du jour
             {
                 textBox2.BackColor = Color.LightGreen;
             }
@@ -55,6 +69,9 @@ namespace Valid_Saisie
                 textBox2.BackColor = Color.Red;
                 Console.Beep(300, 800);
             }
+
+            
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)// Montant
@@ -91,11 +108,11 @@ namespace Valid_Saisie
                             +"Date : "+ textBox2.Text +"\n"
                             + "Montant : "+ textBox3.Text +"\n"
                             +"Code : "+ textBox4.Text, "Validation effectuée", MessageBoxButtons.OK);
+
             DialogResult dr = MessageBox.Show("Fin de l’application ?", "FIN",MessageBoxButtons.YesNo,
                                                 MessageBoxIcon.Question,MessageBoxDefaultButton.Button1);
                     if (dr == DialogResult.Yes)
                         Application.Exit();
-
         }
 
         private void button2_Click(object sender, EventArgs e) // btn Effacer
@@ -112,7 +129,7 @@ namespace Valid_Saisie
 
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e) // Fermeture par "croix rouge", qui pop-up le même msg
         {
             DialogResult dr2 = MessageBox.Show("Fin de l’application ?", "FIN", MessageBoxButtons.YesNo,
                                                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
@@ -125,21 +142,6 @@ namespace Valid_Saisie
                 
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
-        {
-            Regex TxtNom = new Regex(@"^[a-zA-Z]{1,30}$");
-
-            if (TxtNom.IsMatch(textBox1.Text)) 
-            {
-                textBox1.BackColor = Color.LightGreen;
-            }
-            else
-            {
-                textBox1.BackColor = Color.Red;
-                Console.Beep(300, 800);
-                e.Cancel = true;
-                MessageBox.Show("Erreur de Saisie");
-            }
-        }
+        
     }
 }
