@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diff_ObjetGraphiq", "Diff_O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Op_sur_ListBox", "Op_sur_ListBox\Op_sur_ListBox.csproj", "{F0BC581E-C82E-4F77-A8A2-20A8C711AB30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox_ComboBox", "ListBox_ComboBox\ListBox_ComboBox.csproj", "{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F0BC581E-C82E-4F77-A8A2-20A8C711AB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0BC581E-C82E-4F77-A8A2-20A8C711AB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0BC581E-C82E-4F77-A8A2-20A8C711AB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

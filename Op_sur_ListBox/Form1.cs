@@ -19,9 +19,20 @@ namespace Op_sur_ListBox
         //+++++++++++++++++ Groupe "NOUVEL ELEMENT" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private void button1_Click(object sender, EventArgs e) //Btn "Ajout Liste"
         {
-            listBox1.Items.Add(textBox1.Text); //Ajoute le texte dans la listBox
-            textBox1.Text = ""; // Vide la textBox après chaque ajout
-            textBox1.Focus(); // redonne le focus à la textBox 
+            if (textBox1.Text == (string)listBox1.SelectedItem)
+            {
+                MessageBox.Show("Cet élément est déjà présent", "Erreur");
+                textBox1.Text = ""; // Vide la textBox après chaque ajout
+                textBox1.Focus(); // redonne le focus à la textBox 
+            }
+            else
+            {
+                listBox1.Items.Add(textBox1.Text); //Ajoute le texte dans la listBox
+                textBox1.Text = ""; // Vide la textBox après chaque ajout
+                textBox1.Focus(); // redonne le focus à la textBox 
+            }
+
+            
         }
 
         //+++++++++++++++++ Groupe "LstListe" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
