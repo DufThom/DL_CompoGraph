@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Op_sur_ListBox", "Op_sur_Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox_ComboBox", "ListBox_ComboBox\ListBox_ComboBox.csproj", "{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBar_Color", "ScrollBar_Color\ScrollBar_Color.csproj", "{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F9D9C8-DA00-454E-8D75-A83D206E1BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
