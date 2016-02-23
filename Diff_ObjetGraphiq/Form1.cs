@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Diff_ObjetGraphiq
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // +++++++++++++++++ Exo: CheckBox & RadioButton ++++++++++++++++++++++++++++++++++
     {
         public Form1()
         {

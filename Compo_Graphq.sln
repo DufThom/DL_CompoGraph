@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox_ComboBox", "ListBox
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBar_Color", "ScrollBar_Color\ScrollBar_Color.csproj", "{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synthese_WinForm", "Synthese_WinForm\Synthese_WinForm.csproj", "{C3B21561-0CC0-42EB-B47B-7BE84BD4C365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A618D873-5C15-4047-99B6-F8EEC1A9E6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B21561-0CC0-42EB-B47B-7BE84BD4C365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B21561-0CC0-42EB-B47B-7BE84BD4C365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B21561-0CC0-42EB-B47B-7BE84BD4C365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B21561-0CC0-42EB-B47B-7BE84BD4C365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

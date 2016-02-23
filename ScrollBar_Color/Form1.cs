@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ScrollBar_Color
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // +++++++++++++++++ Exo: ScrollBar en Couleurs ++++++++++++++++++++++++++++++++++
     {
         public Form1()
         {
@@ -89,6 +89,9 @@ namespace ScrollBar_Color
 
         }
 
-       
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

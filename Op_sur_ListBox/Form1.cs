@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Op_sur_ListBox
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // +++++++++++++++++  Exo: Op sur ListBox & leurs Propriétés ++++++++++++++++++++++++++++++++++
     {
         public Form1()
         {

@@ -11,7 +11,7 @@ using System.Text.RegularExpressions; // à rajouter pour utiliser les Regex
 
 namespace Valid_Saisie
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form // +++++++++++++++++ Exo: Validation de Saisie ++++++++++++++++++++++++++++++++++
     {
         public Form1()
         {
